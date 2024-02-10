@@ -12,6 +12,6 @@ export class BlogsService {
   }
   postUserData(blog:any): Observable<Object>
   {
-    return this.http.post(`http://localhost:8091/dashboard/putBlogs`,blog)
+    return this.http.post(`http://vishisht-dashboard.itcblogs.xyz/dashboard/putBlogs`,blog)
   }
 }
