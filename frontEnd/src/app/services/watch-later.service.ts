@@ -11,15 +11,15 @@ export class WatchLaterService {
   }
   addToReadLater(userName:any,vlogsId:any)
   {
-    return this.https.get(`http://localhost:8091/dashboard/setFav/${userName}/${vlogsId}`)
+    return this.https.get(`http://vishisht-dashboard.itcblogs.xyz/dashboard/setFav/${userName}/${vlogsId}`)
   }
   showFav(userName:any)
   {
-    return this.https.get(`http://localhost:8091/dashboard/showFav/${userName}`)
+    return this.https.get(`http://vishisht-dashboard.itcblogs.xyz/dashboard/showFav/${userName}`)
   }
   removeFav(userName:any,vlogsId:any)
   {
-    return this.https.get(`http://localhost:8085/dashboard/removeFav/${userName}/${vlogsId}`)
+    return this.https.get(`http://vishisht-dashboard.itcblogs.xyz/dashboard/removeFav/${userName}/${vlogsId}`)
   }
 
 }
