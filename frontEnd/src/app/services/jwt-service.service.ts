@@ -13,7 +13,7 @@ export class JwtServiceService {
   constructor(private http:HttpClient,private router:Router) { }
   generateToken(credentials:any)
   {
-    return this.http.post(`http://localhost:8090/auth/login`,credentials)
+    return this.http.post(`http://vishisht-login.itcblogs.xyz/auth/login`,credentials)
   }
   loginUser(token)
   {
